@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" lang="US-en" >
+    <title>Temperature Convertor</title>
+  </head>
+  <body>
+    <style>
+      body{
+        background-image: linear-gradient(to bottom, #202020, #808080);
+        height:480px;
+        background-repeat:no-repeat;
+      }
+      .container{
+        padding-left:34%;
+        padding-right:22%;
+        padding-top:2%;
+        height:100%;
+        overflow:hidden;
+      }
+      h1{
+        font-size:3em;
+        text-align:center;
+      }
+      p{
+        text-align:center;
+        color:white;
+        background-color:#202020;
+        border-radius:20px;
+      }
+      input{
+         text-align:center;
+         border-radius:20px;
+         border:0;
+         width:100%;
+      }
+      h4{
+        justify-content:center;
+        text-align:center;
+        background-color:#303030;
+        border-radius:20px;
+        color:white;
+        padding:2% 2%;
+        display:inline-block;
+        width:50%;
+        margin-left:25%;
+
+      }
+      .backBtn{
+        padding:8px;
+        width:150px;
+        background-image:linear-gradient(to bottom right, #202020, #404040);
+        box-shadow: 0 2px 2px 1px #202020;
+        color:white;
+        float: right;
+      }
+      @media screen and (max-width:1000px){
+        *{
+
+        }
+        h1{
+          font-size:2.3em;
+        }
+        .container{
+          padding-left:25%;
+          padding-right:25%;
+          padding-top:1%;
+          height:100%;
+          overflow:hidden;
+        }
+      }
+    </style>
+    <input type="submit" name="backBtn" onclick="history.back()" value="Back to main page" class="backBtn"/>
+      <div class="container">
+        <h1 style="color:white;">Temperature Converter</h1>
+        <div>
+          <p>
+            Celcius
+          </p>
+          <input type="number" name="celcius" id="ci" value="" placeholder="0" class="input">
+        </div>
+        <div>
+          <p>
+            Fahrenheit
+          </p>
+          <input type="number" name="fahrenheit" id="fi" value="" placeholder="32" class="input">
+        </div>
+        <div>
+          <p>
+            Kelvin
+          </p>
+          <input type="number" name="kelvin" id="ki" value="" placeholder="273.15" class="input">
+        </div>
+      </div>
+      <div class="footer">
+        <h4>
+          Copyright Shivam 2022
+        </h4>
+      </div>
+      <script src="pro1.js"></script>
+  </body>
+</html>
